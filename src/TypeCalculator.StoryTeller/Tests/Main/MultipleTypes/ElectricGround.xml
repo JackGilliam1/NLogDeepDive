@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Test name="ElectricGround" lifecycle="Acceptance">
+  <Navigation>
+    <NavigateHome isStep="True" />
+    <ShouldSeeTypeInputBox isStep="True" />
+  </Navigation>
+  <Type>
+    <SelectType isStep="True" selectType="Electric" />
+    <SelectTypeTwo isStep="True" selectType="Ground" />
+    <WaitForStatus isStep="True" status="Updated" />
+    <StrongAgainstShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Flying" />
+        <row isStep="True" expected="Poison" />
+        <row isStep="True" expected="Rock" />
+        <row isStep="True" expected="Steel" />
+      </Rows>
+    </StrongAgainstShouldContain>
+    <WeaknessesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Grass" />
+        <row isStep="True" expected="Ground" />
+        <row isStep="True" expected="Ice" />
+        <row isStep="True" expected="Water" />
+      </Rows>
+    </WeaknessesShouldContain>
+    <ImmunitiesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Electric" />
+      </Rows>
+    </ImmunitiesShouldContain>
+    <StrengthsShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Flying (Electric)" />
+        <row isStep="True" expected="Water (Electric)" />
+        <row isStep="True" expected="Electric (Ground)" />
+        <row isStep="True" expected="Fire (Ground)" />
+        <row isStep="True" expected="Poison (Ground)" />
+        <row isStep="True" expected="Rock (Ground)" />
+        <row isStep="True" expected="Steel (Ground)" />
+      </Rows>
+    </StrengthsShouldContain>
+    <WeakAttackShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Dragon (Electric)" />
+        <row isStep="True" expected="Electric (Electric)" />
+        <row isStep="True" expected="Grass" />
+        <row isStep="True" expected="Bug (Ground)" />
+      </Rows>
+    </WeakAttackShouldContain>
+  </Type>
+</Test>

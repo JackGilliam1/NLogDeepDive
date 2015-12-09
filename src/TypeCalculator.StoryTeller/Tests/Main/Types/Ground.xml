@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Test name="Ground" lifecycle="Acceptance">
+  <Navigation>
+    <NavigateHome isStep="True" />
+    <ShouldSeeTypeInputBox isStep="True" />
+  </Navigation>
+  <Type>
+    <SelectType isStep="True" selectType="Ground" />
+    <StrengthsShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Electric" />
+        <row isStep="True" expected="Fire" />
+        <row isStep="True" expected="Poison" />
+        <row isStep="True" expected="Rock" />
+        <row isStep="True" expected="Steel" />
+      </Rows>
+    </StrengthsShouldContain>
+    <WeaknessesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Grass" />
+        <row isStep="True" expected="Ice" />
+        <row isStep="True" expected="Water" />
+      </Rows>
+    </WeaknessesShouldContain>
+    <ImmunitiesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Electric" />
+      </Rows>
+    </ImmunitiesShouldContain>
+    <WeakAttackShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Bug" />
+        <row isStep="True" expected="Grass" />
+      </Rows>
+    </WeakAttackShouldContain>
+    <StrongAgainstShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Poison" />
+        <row isStep="True" expected="Rock" />
+      </Rows>
+    </StrongAgainstShouldContain>
+  </Type>
+</Test>

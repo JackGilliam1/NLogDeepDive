@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Test name="Ice" lifecycle="Acceptance">
+  <Navigation>
+    <NavigateHome isStep="True" />
+    <ShouldSeeTypeInputBox isStep="True" />
+  </Navigation>
+  <Type>
+    <SelectType isStep="True" selectType="Ice" />
+    <StrengthsShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Dragon" />
+        <row isStep="True" expected="Flying" />
+        <row isStep="True" expected="Grass" />
+        <row isStep="True" expected="Ground" />
+      </Rows>
+    </StrengthsShouldContain>
+    <WeaknessesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Fighting" />
+        <row isStep="True" expected="Fire" />
+        <row isStep="True" expected="Rock" />
+        <row isStep="True" expected="Steel" />
+      </Rows>
+    </WeaknessesShouldContain>
+    <ImmunitiesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="None" />
+      </Rows>
+    </ImmunitiesShouldContain>
+    <WeakAttackShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Fire" />
+        <row isStep="True" expected="Ice" />
+        <row isStep="True" expected="Steel" />
+        <row isStep="True" expected="Water" />
+      </Rows>
+    </WeakAttackShouldContain>
+    <StrongAgainstShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Ice" />
+      </Rows>
+    </StrongAgainstShouldContain>
+  </Type>
+</Test>

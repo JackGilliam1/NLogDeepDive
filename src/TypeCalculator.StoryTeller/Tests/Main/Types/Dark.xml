@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Test name="Dark" lifecycle="Acceptance">
+  <Navigation>
+    <NavigateHome isStep="True" />
+    <ShouldSeeTypeInputBox isStep="True" />
+  </Navigation>
+  <Type>
+    <SelectType isStep="True" selectType="Dark" />
+    <StrengthsShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Ghost" />
+        <row isStep="True" expected="Psychic" />
+      </Rows>
+    </StrengthsShouldContain>
+    <WeaknessesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Bug" />
+        <row isStep="True" expected="Fairy" />
+        <row isStep="True" expected="Fighting" />
+      </Rows>
+    </WeaknessesShouldContain>
+    <ImmunitiesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Psychic" />
+      </Rows>
+    </ImmunitiesShouldContain>
+    <WeakAttackShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Dark" />
+        <row isStep="True" expected="Fairy" />
+        <row isStep="True" expected="Fighting" />
+      </Rows>
+    </WeakAttackShouldContain>
+    <StrongAgainstShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Dark" />
+        <row isStep="True" expected="Ghost" />
+      </Rows>
+    </StrongAgainstShouldContain>
+  </Type>
+</Test>

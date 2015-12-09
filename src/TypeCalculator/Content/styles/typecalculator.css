@@ -1,0 +1,121 @@
+.centered {
+    text-align:center;
+}
+
+.stretch {
+    background: cyan;
+    width: 100%;
+    display: inline-block;
+}
+
+.type {
+  color: white;
+}
+
+.bug {
+  background: #A8B820;
+}
+
+.dark {
+  background: #705848;
+}
+
+.dragon {
+  background: blueviolet;
+}
+
+.electric {
+  background: #F8D030;
+}
+
+.fairy {
+  background: #EE99AC;
+}
+
+.fighting {
+  background: #C03028;
+}
+
+.fire {
+  background: #F08030;
+}
+
+.flying {
+  background: #A890F0;
+}
+
+.ghost {
+  background: #7038F8;
+}
+
+.grass {
+  background: #78C850;
+}
+
+.ground {
+  background: #E0C068;
+}
+
+.ice {
+  background: #98D8D8;
+}
+
+.normal {
+  background: #A8A878;
+}
+
+.poison {
+  background: #A040A0;
+}
+
+.psychic {
+  background: #F85888;
+}
+
+.rock {
+  background: #B8A038;
+}
+
+.steel {
+  background: #B8B8D0;
+}
+
+.water {
+  background: #6890F0;
+}
+
+.none {
+  background: #68A090;
+}
+
+.column-third {
+  width: 33%;
+}
+
+.column-left {
+  float: left;
+  width: 50%;
+}
+
+.left, .right, .center {
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    font-size: 32px;
+    margin: 1px;
+}
+
+.column {
+  min-width: 280px;
+}
+
+.types {
+    width: 100%;
+    display: inline-block;
+}
+
+.types .displayInline {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid black;
+}

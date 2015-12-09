@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Test name="Electric" lifecycle="Acceptance">
+  <Navigation>
+    <NavigateHome isStep="True" />
+    <ShouldSeeTypeInputBox isStep="True" />
+  </Navigation>
+  <Type>
+    <SelectType isStep="True" selectType="Electric" />
+    <StrengthsShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Flying" />
+        <row isStep="True" expected="Water" />
+      </Rows>
+    </StrengthsShouldContain>
+    <WeaknessesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Ground" />
+      </Rows>
+    </WeaknessesShouldContain>
+    <ImmunitiesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="None" />
+      </Rows>
+    </ImmunitiesShouldContain>
+    <WeakAttackShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Dragon" />
+        <row isStep="True" expected="Electric" />
+        <row isStep="True" expected="Grass" />
+      </Rows>
+    </WeakAttackShouldContain>
+    <StrongAgainstShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Electric" />
+        <row isStep="True" expected="Flying" />
+        <row isStep="True" expected="Steel" />
+      </Rows>
+    </StrongAgainstShouldContain>
+  </Type>
+</Test>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Test name="Flying" lifecycle="Acceptance">
+  <Navigation>
+    <NavigateHome isStep="True" />
+    <ShouldSeeTypeInputBox isStep="True" />
+  </Navigation>
+  <Type>
+    <SelectType isStep="True" selectType="Flying" />
+    <StrengthsShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Bug" />
+        <row isStep="True" expected="Fighting" />
+        <row isStep="True" expected="Grass" />
+      </Rows>
+    </StrengthsShouldContain>
+    <WeaknessesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Electric" />
+        <row isStep="True" expected="Ice" />
+        <row isStep="True" expected="Rock" />
+      </Rows>
+    </WeaknessesShouldContain>
+    <ImmunitiesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Ground" />
+      </Rows>
+    </ImmunitiesShouldContain>
+    <WeakAttackShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Electric" />
+        <row isStep="True" expected="Rock" />
+        <row isStep="True" expected="Steel" />
+      </Rows>
+    </WeakAttackShouldContain>
+    <StrongAgainstShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Bug" />
+        <row isStep="True" expected="Fighting" />
+        <row isStep="True" expected="Grass" />
+      </Rows>
+    </StrongAgainstShouldContain>
+  </Type>
+</Test>

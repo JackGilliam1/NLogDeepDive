@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Test name="GhostDark" lifecycle="Acceptance">
+  <Navigation>
+    <NavigateHome isStep="True" />
+    <ShouldSeeTypeInputBox isStep="True" />
+  </Navigation>
+  <Type>
+    <SelectType isStep="True" selectType="Ghost" />
+    <SelectTypeTwo isStep="True" selectType="Dark" />
+    <WaitForStatus isStep="True" status="Updated" />
+    <ImmunitiesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Fighting" />
+        <row isStep="True" expected="Normal" />
+        <row isStep="True" expected="Psychic" />
+      </Rows>
+    </ImmunitiesShouldContain>
+    <StrongAgainstShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Poison" />
+      </Rows>
+    </StrongAgainstShouldContain>
+    <WeaknessesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Fairy" />
+      </Rows>
+    </WeaknessesShouldContain>
+    <StrengthsShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Ghost" />
+        <row isStep="True" expected="Psychic" />
+      </Rows>
+    </StrengthsShouldContain>
+    <WeakAttackShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Dark" />
+        <row isStep="True" expected="Fairy (Dark)" />
+        <row isStep="True" expected="Fighting (Dark)" />
+      </Rows>
+    </WeakAttackShouldContain>
+  </Type>
+</Test>

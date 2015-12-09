@@ -1,0 +1,39 @@
+﻿<viewdata model="TypeCalculator.Views.Home.HomeViewModel">
+<set Title="'I am ze title thingy'"/>
+  
+<div id="typeDropdown" class="centered at-top stretch">
+  <select id="typeSelectOne">
+  </select>
+  <select id="typeSelectTwo">
+  </select>
+  <span id="statusBadge">Updating</span>
+</div>
+<div id="attackSection" class="left attack column column-half">
+  <div class="left strong column column-half">
+    <h2>Strong Attack Against</h2>
+    <span class="types">
+    </span>
+  </div>
+  <div class="center weak column column-half">
+    <h2>Weak Attack Against</h2>
+    <span class="types">
+    </span>
+  </div>
+</div>
+<div id="defenseSection" class="right defense column-half">
+  <div class="left strong column column-third">
+    <h2>Strong Defense Against</h2>
+    <span class="types">
+    </span>
+  </div>
+  <div class="center weak column column-third">
+    <h2>Weak Defense Against</h2>
+    <span class="types">
+    </span>
+  </div>
+  <div class="right immune column column-third">
+    <h2>Immune Defense Against</h2>
+    <span class="types">
+    </span>
+  </div>
+</div>

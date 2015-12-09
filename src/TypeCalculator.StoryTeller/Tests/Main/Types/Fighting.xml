@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Test name="Fighting" lifecycle="Acceptance">
+  <Navigation>
+    <NavigateHome isStep="True" />
+    <ShouldSeeTypeInputBox isStep="True" />
+  </Navigation>
+  <Type>
+    <SelectType isStep="True" selectType="Fighting" />
+    <StrengthsShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Dark" />
+        <row isStep="True" expected="Ice" />
+        <row isStep="True" expected="Normal" />
+        <row isStep="True" expected="Rock" />
+        <row isStep="True" expected="Steel" />
+      </Rows>
+    </StrengthsShouldContain>
+    <WeaknessesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Fairy" />
+        <row isStep="True" expected="Flying" />
+        <row isStep="True" expected="Psychic" />
+      </Rows>
+    </WeaknessesShouldContain>
+    <ImmunitiesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="None" />
+      </Rows>
+    </ImmunitiesShouldContain>
+    <WeakAttackShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Bug" />
+        <row isStep="True" expected="Fairy" />
+        <row isStep="True" expected="Flying" />
+        <row isStep="True" expected="Poison" />
+        <row isStep="True" expected="Psychic" />
+      </Rows>
+    </WeakAttackShouldContain>
+    <StrongAgainstShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Bug" />
+        <row isStep="True" expected="Dark" />
+        <row isStep="True" expected="Rock" />
+      </Rows>
+    </StrongAgainstShouldContain>
+  </Type>
+</Test>

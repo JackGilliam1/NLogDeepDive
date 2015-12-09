@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Test name="RockGround" lifecycle="Acceptance">
+  <Navigation>
+    <NavigateHome isStep="True" />
+    <ShouldSeeTypeInputBox isStep="True" />
+  </Navigation>
+  <Type>
+    <SelectType isStep="True" selectType="Rock" />
+    <SelectTypeTwo isStep="True" selectType="Ground" />
+    <WaitForStatus isStep="True" status="Updated" />
+    <StrongAgainstShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Fire" />
+        <row isStep="True" expected="Flying" />
+        <row isStep="True" expected="Normal" />
+        <row isStep="True" expected="Poison x2" />
+        <row isStep="True" expected="Rock" />
+      </Rows>
+    </StrongAgainstShouldContain>
+    <WeaknessesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Fighting" />
+        <row isStep="True" expected="Grass x2" />
+        <row isStep="True" expected="Ground" />
+        <row isStep="True" expected="Ice" />
+        <row isStep="True" expected="Steel" />
+        <row isStep="True" expected="Water x2" />
+      </Rows>
+    </WeaknessesShouldContain>
+    <ImmunitiesShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Electric" />
+      </Rows>
+    </ImmunitiesShouldContain>
+    <StrengthsShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Bug (Rock)" />
+        <row isStep="True" expected="Fire" />
+        <row isStep="True" expected="Flying (Rock)" />
+        <row isStep="True" expected="Ice (Rock)" />
+        <row isStep="True" expected="Electric (Ground)" />
+        <row isStep="True" expected="Poison (Ground)" />
+        <row isStep="True" expected="Rock (Ground)" />
+        <row isStep="True" expected="Steel (Ground)" />
+      </Rows>
+    </StrengthsShouldContain>
+    <WeakAttackShouldContain isStep="True">
+      <Rows>
+        <row isStep="True" expected="Fighting (Rock)" />
+        <row isStep="True" expected="Ground (Rock)" />
+        <row isStep="True" expected="Steel (Rock)" />
+        <row isStep="True" expected="Bug (Ground)" />
+        <row isStep="True" expected="Grass (Ground)" />
+      </Rows>
+    </WeakAttackShouldContain>
+  </Type>
+</Test>
